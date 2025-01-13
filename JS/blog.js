@@ -1,13 +1,5 @@
-document.getElementById('to-top').addEventListener('click', function(event) {
-  event.preventDefault();
-  window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-  });
-});
-
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('/data/blogPosts.json')
+  fetch('data/blogPosts.json')
     .then(response => response.json())
     .then(data => {
       
