@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title> Slmmaula</title>
+    <meta name="description" content="Undergraduate Student Majoring in Informatics Engineering at Universitas Teknologi Bandung. Passionate about Frontend Development, Graphic Design, and Computer Engineering. Explore my projects and experiences.">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Salim Maula",
+          "jobTitle": "Undergraduate Student",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "Universitas Teknologi Bandung"
+          },
+          "url": "https://slmmaula.vercel.app",
+          "sameAs": [
+            "https://www.linkedin.com/in/slmmaula",
+            "https://github.com/Slmmaula",
+            "https://www.instagram.com/slmmaula_"
+          ]
+        }
+    </script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+    <script src="https://kit.fontawesome.com/128ddcb2a3.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="image/logo.png" alt="Slmmaula Logo" class="logo-img">
+        </a>
+
+        <nav class="navbar">
+            <a href="#" id="nav-home" class="active"><i class='bx bx-home'></i><span class="nav-text">Home</span></a>
+            <a href="about.html" id="nav-about"><i class='bx bx-user'></i><span class="nav-text">About</span></a>
+            <a href="blog.html" id="nav-blog"><i class='bx bx-file'></i><span class="nav-text">Blog</span></a>
+            <a href="projects.html" id="nav-projects"><i class='bx bx-folder'></i><span class="nav-text">Projects</span></a>
+        </nav>
+    </header>
+    
+    <!-- Home section Start-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Salim Maula</h1>
+            <h3>Undergraduate Student Majoring in <br> Informatics Engineering | <span>Univ Teknologi Bandung</span></h3>
+            <p>Hi there, I'm Salim Maula Achyaruddin, Undergraduate Student Majoring in Informatics Engineering of Universitas Teknologi Bandung. I am highly motivated and passionate about learning new things, especially in the fields of Computer Engineering, graphic design, Frontend Development and other related areas.</p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/slmmaula_" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                <a href="mailto:contact.slmmaula@gmail.com" target="_blank"><i class='bx bxl-gmail'></i></a>
+                <a href="https://www.linkedin.com/in/slmmaula/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/Slmmaula" target="_blank"><i class='bx bxl-github' ></i></a>
+            </div>
+            <a href="about.html" class="btn-home">Learn More</a>
+        </div>
+
+        <div class="home-img">
+            <img src="image/home.png" alt="Salim Maula - Home Image">
+        </div>
+        
+        
+    </section>
+    <!-- Home section End-->
+
+    <!-- Contact section Start-->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form id="contact-form">
+            <div class="input-box">
+                <input type="text" id="name" name="name" placeholder="Full Name" class="item" autocomplete="off" required>
+                <input type="email" id="email" name="email" placeholder="Email Address" class="item" autocomplete="off" required>
+            </div>
+            <div class="input-box2">
+                <input type="text" id="subject" name="subject" placeholder="Email Subject" class="item" autocomplete="off" required>
+            </div>
+            <textarea id="message" name="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off" required></textarea>
+
+            <div class="form-buttons">
+                <label for="file-upload" class="file-upload">
+                    <i class="fas fa-paperclip"></i> Attach File
+                    <input type="file" id="file-upload" name="file">
+                </label>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+    </section>
+    <!-- Contact section End-->
+
+    <!-- Footer Design Start -->
+    <footer class="footer" style="background-color: #1f242d;">
+        <div class="footer-text">
+            <p>&copy; <span id="footer-year"></span> Slmmaula | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="" id="to-top"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+    <!-- Footer Design END -->
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- EMAIL JS -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- JAVASCRIPT -->
+    <script src="JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Slmmaula</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+    <script src="https://kit.fontawesome.com/128ddcb2a3.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="image/logo.png" alt="Slmmaula Logo" id="logo-img">
+        </a>
+
+        <nav class="navbar">
+            <a href="index.html" id="nav-home"><i class='bx bx-home'></i><span class="nav-text">Home</span></a>
+            <a href="#" id="nav-about" class="active"><i class='bx bx-user'></i><span class="nav-text">About</span></a>
+            <a href="blog.html" id="nav-blog"><i class='bx bx-file'></i><span class="nav-text">Blog</span></a>
+            <a href="projects.html" id="nav-projects"><i class='bx bx-folder'></i><span class="nav-text">Projects</span></a>
+        </nav>
+    </header>
+
+    <!-- About section Start-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="image/about.png" alt="Salim Maula - About Image">
+            <div class="about-sosmed">
+                <a href="https://www.instagram.com/slmmaula_" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                <a href="mailto:contact.slmmaula@gmail.com" target="_blank"><i class='bx bxl-gmail'></i></a>
+                <a href="https://www.linkedin.com/in/slmmaula/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/Slmmaula" target="_blank"><i class='bx bxl-github' ></i></a>
+                <button class="see-projects-btn" onclick="window.location.href='projects.html'">See my projects ➥</button>
+            </div>
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">I'm <span>Salim Maula.</span></h2>
+            <h3>I Live in Bandung, where I break things & learn fast.</h3>
+            <p>As a Informatics Engineering student at the Universitas Teknologi Bandung, I am a passionate and committed individual with a strong interest in technology and design. I am highly motivated and passionate about learning new things, especially in the fields of Computer Engineering, graphic design, Frontend Development and other related areas. Additionally, I continuously seek opportunities to enhance my skills by attending workshops, seminars, and industry events. My goal is to stay at the forefront of technological advancements and contribute to innovative solutions in the field. I am currently actively seeking internships and opportunities to apply my knowledge and skills in real-world scenarios. I am driven by a passion for innovation and a desire to make a positive impact in the technology industry.
+            <br>
+            <br>
+            Initially, my interest in the field of technology began during junior high school. This interest motivated me to pursue studies in Informatics Engineering, where I could enhance my skills in WEB development and problem-solving.
+            <br>
+            <br>
+            I have been studying web technologies for the past 4 years, both in college and independently. During this time, I have been able to learn new tools and frameworks and apply them to real-world problems. I believe in the power of creativity and technology to drive positive change. my goal is always to create meaningful and lasting impacts. I am committed to continuous learning and growth, always seeking new opportunities to expand my knowledge and skills.
+            <br>
+            <br>
+            Thank you for taking the time to learn more about me. If you'd like to collaborate on a project, have any questions, or just want to connect, feel free to reach out. I'm always excited to meet new people and explore new opportunities.
+            </p>
+        </div>
+
+    </section>
+    <!-- about section End-->
+
+    <!-- Footer Design Start -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>&copy; <span id="footer-year"></span> Slmmaula | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="" id="to-top"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+    <!-- Footer Design END -->
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const yearElement = document.getElementById('footer-year');
+            const currentYear = new Date().getFullYear();
+            const startYear = 2023;
+
+            if (currentYear > startYear) {
+                yearElement.textContent = `${startYear}-${currentYear}`;
+            } else {
+                yearElement.textContent = startYear;
+            }
+        });
+
+        document.getElementById('to-top').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            ScrollReveal({
+            reset: false,
+            distance: '80px',
+            duration: 2000,
+            delay: 200
+            });
+
+        ScrollReveal().reveal('.about-img', { origin: 'bottom' });
+        ScrollReveal().reveal('.about-content, .heading', { origin: 'top' });
+        ScrollReveal().reveal('.about-content p', { origin: 'right' });
+    
+        });
+    </script>
+
+</body>
+</html>
